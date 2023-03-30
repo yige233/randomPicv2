@@ -2,7 +2,7 @@
 
 ## 如何使用？
 
-1. 前往[Releases](https://github.com/yige233/randomPic/releases/tag/v2.0)，下载`randomPicForWindows.zip`
+1. 前往[Releases](https://github.com/yige233/randomPicv2/releases/tag/v2.0)，下载`randomPicv2ForWindows.zip`
 2. 解压压缩包，找到`双击启动.cmd`，运行它。
 3. 如果命令行黑框中给出了api的url链接（一般是[http://localhost:3000/info](http://localhost:3000/info)），就说明api已经启动成功。
 4. 为了使api能够输出图片，还需要向刚刚程序生成的`Pics`文件夹中放入一些图片。
@@ -13,7 +13,7 @@ Q:黑框太丑，怎么办？
 
 A:可以把它做成服务，随电脑启动而启动，且在后台持续运行，没有黑框。
 
-1. 前往[Releases](https://github.com/yige233/randomPic/releases/tag/v2.0)，下载`randomPicForWindows.zip`
+1. 前往[Releases](https://github.com/yige233/randomPicv2/releases/tag/v2.0)，下载`randomPicv2ForWindows.zip`
 2. 解压压缩包，找到`安装服务.cmd`，使用管理员身份运行它。
 3. 完成！
 4. 如果需要卸载服务，那么找到`卸载服务.cmd`，使用管理员身份运行它。
