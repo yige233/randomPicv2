@@ -36,22 +36,22 @@ const source2 = {
   data: ["./test.png", "C:/Folder/test.jpg"], //数组，元素是文件路径。Windows下路径中的反斜杠应改成正斜杠: \ => /
 };
 
-//表示从Alist V3 的文件夹中获取图片（不遍历子文件夹）
+//表示从Alist V3 的文件夹中获取图片（不遍历子文件夹）！！示例已经不可用
 const source3 = {
   type: "AlistV3Folder", //表示类型为Alist V3 文件夹
   data: [{ host: "https://al.nn.ci", passwd: "", paths: ["/"] }], //数组，元素是一个对象，分别有host(alist地址)、path(alist文件夹挂载路径)和passwd(访问密码)三个属性
 };
 
-//表示从Alist V3 中获取给定的图片
+//表示从Alist V3 中获取给定的图片 ！！示例已经不可用
 const source4 = {
   type: "AlistV3Pic", //表示类型为Alist V3 图片
   data: [{ host: "https://al.nn.ci", passwd: "", paths: ["/alist.png"] }], //数组，元素是一个对象，分别有host(alist地址)、path(数组，元素是alist文件挂载路径)和passwd(访问密码)三个属性
 };
 
-//下面的配置表示：图册内有一个名为"Default"的收藏夹，它使用了 source1 和source2 作为图片的来源；名为"Test"的收藏夹使用了 source3 作为图片源
+//下面的配置表示：图册内有一个名为"Default"的收藏夹，它使用了 source1 作为图片的来源；名为"Test"的收藏夹则是空的
 const collections = {
   Default: [source1],
-  Test: [source3],
+  Test: [],
 };
 
 //导出配置。不要动就可以
