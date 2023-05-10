@@ -7,6 +7,9 @@
 3. 如果命令行黑框中给出了api的url链接（一般是[http://localhost:3000/info](http://localhost:3000/info)），就说明api已经启动成功。
 4. 为了使api能够输出图片，还需要向刚刚程序生成的`Pics`文件夹中放入一些图片。
 
+5. 浏览器访问
+[http://localhost:3000/random-picture?302](http://localhost:3000/random-picture?302),就会从Pics文件夹中挑选一张随机的图片，并显示出来。
+
 以上是默认情况，如果有修改config.js，情况可能会有所不同，比如程序试图使用的端口已经被占用、修改了程序使用的图片源。
 
 Q:黑框太丑，怎么办？
