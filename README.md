@@ -216,7 +216,7 @@ Content-Type: application/json; charset=utf-8
 
 ### 关于反向代理
 
-如果需要反向代理，有一个应该注意的点：**反向代理的 URI 路径要以`/`结尾**
+如果需要反向代理，有一个应该注意的点：**如果反向代理的 URI 路径结尾要和被代理的后端地址保持一致，即要么都以`/`结尾，要么都不以`/`结尾**
 
 <details>
 <summary>以 Apache 为例</summary>
@@ -226,6 +226,13 @@ Content-Type: application/json; charset=utf-8
 ```
 ProxyPass "/randomPic/"  "http://localhost:3000/"
 ProxyPassReverse "/randomPic/"  "http://localhost:3000/"
+```
+
+或者
+
+```
+ProxyPass "/randomPic"  "http://localhost:3000"
+ProxyPassReverse "/randomPic"  "http://localhost:3000"
 ```
 
 下面则是错误的配置：
