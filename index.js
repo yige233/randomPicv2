@@ -14,7 +14,7 @@ import {
 
 const fsp = fs.promises;
 
-const version = "2.0";
+const version = "2.1";
 
 //图片适配器
 const Adapters = new Map();
@@ -335,7 +335,7 @@ class Router {
         res.statusCode
       );
       if (res.noResBody) {
-        res.end();
+        return res.end();
       }
       res.end(...params);
     };
